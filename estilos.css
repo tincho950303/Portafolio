@@ -1,0 +1,361 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --colorFondo: #1c1c1c;
+    --colorCajas: linear-gradient(to top, #000000, #3d3c3dfa);
+    --colorPrincipal: #8787ff;
+    
+}
+/* Tipografía general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--colorFondo);    
+    line-height: 1.6;
+    font-weight: 500;
+    padding: 10px;
+}
+
+/* Estilos generales */
+.uno, .dos, .tres, footer {
+    max-width: 900px;
+    margin: 40px auto;
+    background: var(--colorCajas);
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+h1,h2,h3 {
+    font-size: 1.5rem;
+    color: #222;
+    font-weight: 300;
+}
+
+
+
+/* Encabezado */
+header {
+    margin: 40px auto;
+    max-width: 900px;
+
+    
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ccc;
+    transition: color .8s ease;
+}
+
+header nav a:hover{
+    color: #46d42d;
+    text-decoration: underline;
+    transition: color .8s  ease;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    
+    color: #fff;   
+    
+}
+
+
+
+
+/* Sección uno - presentación */
+
+
+.caja-central {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caja-cara img.cara {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    object-fit: cover;
+}
+
+.caja-presentacion h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.caja-presentacion p.presentacion {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Sección dos - Sobre mí y Aptitudes */
+
+
+.dos h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.dos p {
+    margin-bottom: 20px;
+    color: #555;
+    font-weight: 500;
+}
+
+.aptitudes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.tech-list {
+    display: flex;
+    gap: 20px;
+}
+
+.tech-list img.tech {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+    cursor: default;
+}
+
+.tech-list img.tech:hover {
+    filter: grayscale(0);
+}
+
+/* Lista de cursos */
+.dos ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #444;
+}
+
+.dos ul li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.dos ul li a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.dos ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección tres - Proyectos */
+
+
+.tres h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #222;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.proyectos {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    width: 280px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 1.3rem;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    flex-grow: 1;
+}
+
+.card a {
+    margin-top: 10px;
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: #004a80;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    color: #333;
+}
+
+footer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.contacto a {
+    display: inline-block;
+}
+
+.red-social {
+    width: 32px;
+    height: 32px;
+    filter: grayscale(30%);
+    transition: filter 0.3s ease;
+}
+
+.red-social:hover {
+    filter: grayscale(0);
+}
+
+.contacto hr {
+    border: none;
+    border-left: 1px solid #ccc;
+    height: 32px;
+    margin: 0 10px;
+}
+
+/* Pie de página pequeño */
+footer p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+footer p a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+    .caja-central {
+        flex-direction: column;
+        text-align: center;
+    }
+
+.caja-cara img.cara {
+        width: 130px;
+        margin: 0 auto;
+    }
+
+    .aptitudes {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .tech-list {
+        justify-content: center;
+    }
+
+    .proyectos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    header h3 {
+        font-size: 1.3rem;
+    }
+
+    .caja-presentacion h1 {
+        font-size: 2rem;
+    }
+
+    .dos h2, .tres h2, footer h2 {
+        font-size: 1.5rem;
+    }
+
+    .card img {
+        height: 120px;
+    }
+
+    .red-social {
+        width: 28px;
+        height: 28px;
+    }
+}
